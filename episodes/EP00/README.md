@@ -4,8 +4,8 @@
 
 - **類型**：單人知識集（開台試播集）
 - **主持人**：Adela
-- **上架日期**：（待補）
-- **收聽**：Spotify（待補）・Apple Podcasts（待補）・YouTube（待補）
+- **上架日期**：2026-11-22
+- **收聽**：[Spotify](https://open.spotify.com/episode/1nvItb3HrL5HiXn4xrfPSt)・Apple Podcasts（待補）
 
 ## 單集說明
 

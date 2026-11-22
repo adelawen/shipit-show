@@ -117,7 +117,7 @@
   <div class="label"><span class="spark">✶</span>訂閱收聽</div>
   <div class="links" id="listen"></div>
 
-  <div class="label"><span class="spark">✶</span>追蹤 Adela</div>
+  <div class="label"><span class="spark">✶</span>追蹤 &amp; 聯絡</div>
   <div class="links" id="social"></div>
 
   <section id="past-wrap" hidden>
@@ -132,16 +132,18 @@
 <script>
 /* ===== 節目層級的連結：留空 "" 會顯示「即將上線」 ===== */
 const SHOW = {
-  spotify: "",
+  spotify: "https://open.spotify.com/episode/1nvItb3HrL5HiXn4xrfPSt",  // 之後換成節目首頁 open.spotify.com/show/...
   apple:   "",
-  youtube: "",
-  instagram: "",
+  youtube: "https://www.youtube.com/@adelawen-q7c",
+  instagram: "https://www.instagram.com/adlawenee/",
   threads: "",
   linkedin: "https://www.linkedin.com/in/adelawen",
+  email: "mailto:shinyueh.tpe15@gmail.com",
 };
 /* 每一集的資料在 episodes.json（最新的一集放最上面） */
 
 const ICONS = {
+  email:'<svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1.4 2 7.6 5.7L19.6 7H4.4ZM20 8.3l-7.4 5.5a1 1 0 0 1-1.2 0L4 8.3V17h16V8.3Z"/></svg>',
   linkedin:'<svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11.25H3V9.75Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-4.95c0-1.18-.02-2.7-1.65-2.7-1.65 0-1.9 1.29-1.9 2.62V21h-3.85V9.75Z"/></svg>',
   spotify:'<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.6 14.4a.6.6 0 0 1-.9.2c-2.4-1.5-5.4-1.8-9-1a.6.6 0 1 1-.3-1.2c3.9-.9 7.2-.5 9.9 1.1.3.2.4.6.3.9Zm1.2-2.7a.8.8 0 0 1-1 .3c-2.7-1.7-6.9-2.2-10.2-1.2a.8.8 0 1 1-.4-1.5c3.7-1.1 8.4-.6 11.4 1.3.4.2.5.7.2 1.1Zm.1-2.8C14.7 9 9.4 8.8 6.3 9.7a.9.9 0 1 1-.5-1.8c3.5-1 9.4-.8 13.1 1.4a.9.9 0 0 1-1 1.6Z"/></svg>',
   apple:'<svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-3.2 15.3l.3-1.6A6.5 6.5 0 1 1 18.5 10a6.4 6.4 0 0 1-3.6 5.8l.3 1.6A8 8 0 0 0 12 2Zm0 3.2a4.8 4.8 0 0 0-2.4 9l.3-1.7a3.2 3.2 0 1 1 4.2 0l.3 1.7a4.8 4.8 0 0 0-2.4-9ZM12 8.6a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2Zm-1.3 4.6c-.6 0-1 .5-.9 1.1l.8 6.4c.1.7.6 1.3 1.4 1.3s1.3-.6 1.4-1.3l.8-6.4c.1-.6-.3-1.1-.9-1.1h-2.6Z"/></svg>',
@@ -150,6 +152,7 @@ const ICONS = {
   threads:'<svg viewBox="0 0 24 24"><path d="M17 11.2c-.1 0-.2-.1-.3-.1-.2-3-1.8-4.7-4.6-4.7-1.6 0-3 .7-3.9 2l1.5 1c.6-1 1.6-1.2 2.4-1.2 1 0 1.7.3 2.2.9.3.4.6 1 .6 1.7-.8-.1-1.6-.2-2.5-.1-2.5.1-4.100 1.6-4 3.6.1 1 .6 1.9 1.4 2.4.7.5 1.6.7 2.5.6 1.2-.1 2.2-.5 2.8-1.4.5-.6.8-1.5.9-2.5.6.4 1 .9 1.3 1.4.4 1 .4 2.6-.9 3.9-1.2 1.2-2.6 1.700-4.7 1.7-2.4 0-4.2-.8-5.3-2.3-1.1-1.4-1.6-3.4-1.6-6s.5-4.6 1.6-6c1.2-1.5 3-2.2 5.3-2.3 2.4 0 4.2.8 5.4 2.3.6.7 1 1.6 1.3 2.7l1.8-.5c-.3-1.300-.9-2.4-1.6-3.4-1.5-1.9-3.8-2.9-6.8-2.9-3 0-5.3 1-6.8 2.9C3.6 7.1 3 9.4 3 12.2c0 2.9.7 5.2 2 6.9 1.5 1.9 3.8 2.9 6.8 2.9 2.6 0 4.5-.7 6-2.2 2-2 2-4.5 1.3-6-.4-1.1-1.2-2-2.1-2.6Zm-4.4 4.2c-1 .1-2.1-.4-2.1-1.4 0-.8.6-1.6 2.4-1.7h.6c.6 0 1.2.1 1.7.2-.2 2.4-1.4 2.8-2.6 2.9Z"/></svg>',
 };
 const META = {
+  email:{name:"合作邀約・來賓推薦", color:"#E0A92E", sub:"shinyueh.tpe15@gmail.com"},
   linkedin:{name:"LinkedIn", color:"#0A66C2", sub:"Adela Wen"},
   spotify:{name:"Spotify", color:"#1DB954"},
   apple:{name:"Apple Podcasts", color:"#9B4DCA"},
@@ -165,12 +168,12 @@ function renderLinks(id, keys){
     const inner = `<span class="ico" style="background:${m.color}">${ICONS[k]}</span>
       <span class="name">${m.name}${m.sub ? `<span class="sub">${m.sub}</span>` : ""}</span>`;
     return url
-      ? `<a class="card link" href="${esc(url)}" target="_blank" rel="noopener">${inner}<span class="go">→</span></a>`
+      ? `<a class="card link" href="${esc(url)}"${url.startsWith("mailto:")?"":` target="_blank" rel="noopener"`}>${inner}<span class="go">→</span></a>`
       : `<div class="card link soon">${inner}<span class="go">即將上線</span></div>`;
   }).join("");
 }
 renderLinks("listen", ["spotify","apple","youtube"]);
-renderLinks("social", ["instagram","threads","linkedin"]);
+renderLinks("social", ["instagram","threads","linkedin","email"]);
 
 function epLink(ep, k){ return (ep.links && ep.links[k]) || SHOW[k] || ""; }
 
