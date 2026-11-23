@@ -38,8 +38,8 @@ AI 讓做出一個產品變得前所未有地快，但「做得出來」不等�
 
 | 收聽 | 追蹤 |
 |---|---|
-| [Spotify](https://open.spotify.com/episode/1nvItb3HrL5HiXn4xrfPSt) | [Instagram](https://www.instagram.com/adlawenee/) |
-| Apple Podcasts（即將上線） | Threads（即將上線） |
+| [Spotify](https://open.spotify.com/episode/1nvItb3HrL5HiXn4xrfPSt) | [Instagram](https://www.instagram.com/theshipitshow.adla/) |
+| [Apple Podcasts](https://podcasts.apple.com/tw/podcast/the-ship-it-show/id6838007216) | [Threads](https://www.threads.com/@theshipitshow.adla) |
 | [YouTube](https://www.youtube.com/@adelawen-q7c) | [LinkedIn](https://www.linkedin.com/in/adelawen) |
 
 想推薦來賓、合作邀約，或有想聽的 Aha 故事？歡迎寫信到 **shinyueh.tpe15@gmail.com**，或在 Instagram、LinkedIn 告訴我。

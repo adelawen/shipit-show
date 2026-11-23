@@ -5,7 +5,7 @@
 - **類型**：單人知識集（開台試播集）
 - **主持人**：Adela
 - **上架日期**：2026-11-22
-- **收聽**：[Spotify](https://open.spotify.com/episode/1nvItb3HrL5HiXn4xrfPSt)・Apple Podcasts（待補）
+- **收聽**：[Spotify](https://open.spotify.com/episode/1nvItb3HrL5HiXn4xrfPSt)・[Apple Podcasts](https://podcasts.apple.com/tw/podcast/the-ship-it-show/id6838007216?i=1000803439395)・[YouTube](https://www.youtube.com/watch?v=L2evflK1YkU)
 
 ## 單集說明
 
